@@ -13,7 +13,7 @@
   margin-right: 50PX;
 }
 
-.button_ext, .slider .button {
+.button_ext, .subscribe form button, .slider .button {
   text-decoration: none;
   background: #ffc000;
   color: #fff;
@@ -26,11 +26,11 @@
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
-.button_ext:hover, .slider .button:hover {
+.button_ext:hover, .subscribe form button:hover, .slider .button:hover {
   opacity: 0.8;
   color: #2d3e50;
 }
-.button_ext:active, .slider .button:active {
+.button_ext:active, .subscribe form button:active, .slider .button:active {
   opacity: 0.8;
 }
 
@@ -434,6 +434,45 @@ p {
   opacity: 0.7;
 }
 
+.subscribe {
+  text-align: center;
+}
+.subscribe h4 {
+  font-size: 24px;
+  color: #0c0e37;
+  margin-bottom: 65px;
+}
+.subscribe form {
+  position: relative;
+  -webkit-box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  border-radius: 50px;
+}
+.subscribe form input {
+  font-size: 16px;
+  color: #0c0e37;
+  padding: 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f0f0f0;
+  width: 490px;
+}
+.subscribe form input:focus {
+  outline: none;
+}
+.subscribe form button {
+  position: absolute;
+  right: 0;
+  border-radius: 50px;
+  padding: 23px 70px;
+}
+
+footer {
+  text-align: center;
+  padding: 80px 60px;
+}
+
 @media (max-width: 1232px) {
   .service .service_items {
     padding: 30px;
@@ -461,7 +500,6 @@ p {
   .service .service_items .service_item .service_text p {
     line-height: 1.5;
   }
-
   .statistic {
     padding: 35px;
   }
@@ -471,7 +509,6 @@ p {
   .statistic .statistic_inner p {
     font-size: 38px;
   }
-
   .about {
     padding: 60px;
   }
@@ -489,7 +526,6 @@ p {
   .slider p {
     margin: 70px 135px 40px 135px;
   }
-
   .about p {
     padding: 0 75px;
   }
@@ -500,16 +536,13 @@ p {
     padding: 15px 20px;
     width: 45%;
   }
-
   .statistic {
     margin: 60px 0;
   }
-
   .features h2 {
     font-size: 32px;
     margin: 10px 0 20px 0;
   }
-
   .portfolio h2 {
     font-size: 32px;
     margin: 10px 0 20px 0;
@@ -519,10 +552,9 @@ p {
   }
 }
 @media (max-width: 830px) {
-  .button_ext, .slider .button {
+  .button_ext, .slider .button, .subscribe form button {
     font-size: 16px;
   }
-
   .header_2 {
     padding: 10px 20px;
   }
@@ -556,15 +588,12 @@ p {
   .header_2 .line .nav_toggle {
     display: block;
   }
-
   .header_2.fixed {
     padding: 5px 20px;
   }
-
   .about p {
     padding: 0;
   }
-
   .slider {
     padding: 80px 0 70px 0;
   }
@@ -574,7 +603,6 @@ p {
   .slider p {
     margin: 70px 135px 40px 135px;
   }
-
   .service {
     display: inline-block;
   }
@@ -596,7 +624,6 @@ p {
   .service .service_items .service_item .service_text p {
     line-height: 1.5;
   }
-
   .features {
     margin-bottom: 50px;
   }
@@ -606,7 +633,6 @@ p {
   .features .features_item {
     width: 49%;
   }
-
   .portfolio {
     margin-bottom: 40px;
   }
@@ -619,11 +645,10 @@ p {
   }
 }
 @media (max-width: 560px) {
-  .button_ext, .slider .button {
+  .button_ext, .slider .button, .subscribe form button {
     padding: 20px 75px;
     font-size: 14px;
   }
-
   .slider {
     padding: 40px 0 30px 0;
   }
@@ -633,11 +658,9 @@ p {
   .slider p {
     margin: 30px 90px 20px 90px;
   }
-
   .statistic {
     margin: 30px 0;
   }
-
   .about {
     padding: 30px;
   }
@@ -656,7 +679,6 @@ p {
   .about .a_items a p {
     font-size: 14px;
   }
-
   .features {
     margin-bottom: 30px;
   }
@@ -677,7 +699,6 @@ p {
   .features .features_item .features_text p {
     font-size: 14px;
   }
-
   .portfolio {
     margin-bottom: 40px;
   }
@@ -696,6 +717,32 @@ p {
     padding: 5px 5px;
     display: block;
   }
+  .subscribe {
+    text-align: center;
+  }
+  .subscribe h4 {
+    font-size: 24px;
+    color: #0c0e37;
+    margin-bottom: 65px;
+  }
+  .subscribe form {
+    -webkit-box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.1);
+  }
+  .subscribe form input {
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 50px;
+    width: 300px;
+  }
+  .subscribe form button {
+    right: 0;
+    border-radius: 50px;
+    padding: 20px 20px;
+  }
+  .subscribe footer {
+    padding: 40px 60px;
+  }
 }
 @media (max-width: 430px) {
   .header_1 {
@@ -709,11 +756,9 @@ p {
     margin-left: 20px;
     margin-top: 10px;
   }
-
   .slider p {
     margin: 30px 40px 20px 40px;
   }
-
   .service {
     display: inline-block;
   }
@@ -735,7 +780,6 @@ p {
   .service .service_items .service_item .service_text p {
     line-height: 1.5;
   }
-
   .statistic {
     padding: 10px;
   }

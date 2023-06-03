@@ -8,6 +8,7 @@ $yellow: #ffc000;
 $black: #232323;
 $dark_gray: #252c30;
 
+
 .p_ext{
 	font-size: 16px;
 	text-align: left;
@@ -501,6 +502,52 @@ p{
 	}
 }
 
+.subscribe{
+	text-align: center;
+
+	h4{
+		font-size: 24px;
+		color: #0c0e37;
+		margin-bottom: 65px;
+	}
+
+	form{
+		position: relative;
+		box-shadow: 0 0 25px 25px rgba(0,0,0, .1);
+		display: inline-block;
+		border-radius: 50px;
+		input{
+			font-size: 16px;
+			color: #0c0e37;
+			padding: 25px;
+			border: none;
+			border-radius: 50px;
+			background-color: #f0f0f0;
+			width: 490px;
+
+			
+
+			&:focus{
+				outline: none;
+			}
+
+		}
+
+		button{
+			position: absolute;
+			right: 0;
+			@extend .button_ext;
+			border-radius: 50px;
+			padding: 23px 70px;
+		}
+	}
+}
+
+footer{
+	text-align: center;
+	padding: 80px 60px;
+}
+
 
 
 
@@ -865,6 +912,36 @@ p{
 		}
 
 	}
+
+	.subscribe{
+	text-align: center;
+
+	h4{
+		font-size: 24px;
+		color: #0c0e37;
+		margin-bottom: 65px;
+	}
+
+	form{
+		box-shadow: 0 0 25px 25px rgba(0,0,0, .1);
+		input{
+			font-size: 14px;
+			padding: 20px;
+			border-radius: 50px;
+			width: 300px;
+		}
+
+		button{
+			right: 0;
+			border-radius: 50px;
+			padding: 20px 20px;
+		}
+	}
+
+	footer{
+		padding: 40px 60px;
+	}
+}
 }
 
 
